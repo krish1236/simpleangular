@@ -21,6 +21,6 @@ class="form-control"
 <p>
   {{serverStatus}}
 </p>
-<p>
+<p *ngIf="serverCreated">
   server page with id {{id}} is {{getStatus()}}
 </p>
